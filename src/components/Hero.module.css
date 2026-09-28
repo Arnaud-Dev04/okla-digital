@@ -1,0 +1,209 @@
+.hero {
+  position: relative;
+  min-height: 92svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 110px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #081226 0%, #0e2340 55%, #183863 100%);
+  text-align: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 50% 30%, rgba(245, 166, 35, 0.12) 0%, transparent 60%),
+    radial-gradient(circle at 15% 70%, rgba(245, 166, 35, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 85% 65%, rgba(245, 166, 35, 0.06) 0%, transparent 45%);
+  pointer-events: none;
+}
+
+.inner {
+  max-width: 920px;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 5vw, 3rem);
+  padding-top: clamp(3rem, 6vw, 5rem);
+  padding-bottom: clamp(5rem, 8vw, 7rem);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.badgeWrap {
+  margin-bottom: 1.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 1.25rem;
+  background: rgba(245, 166, 35, 0.12);
+  border: 1px solid rgba(245, 166, 35, 0.35);
+  border-radius: 999px;
+  color: #ffbe42;
+  font-family: var(--font-display, "Poppins", sans-serif);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  backdrop-filter: blur(8px);
+}
+
+.badgeDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #f5a623;
+  box-shadow: 0 0 10px #f5a623;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+.heading {
+  font-family: var(--font-display, "Poppins", sans-serif);
+  font-size: clamp(2.2rem, 5.5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff !important;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.headingAccent {
+  color: #f5a623;
+  text-shadow: 0 0 35px rgba(245, 166, 35, 0.35);
+}
+
+.script {
+  font-family: var(--font-script, "Caveat", cursive);
+  font-size: clamp(1.4rem, 3.2vw, 2.1rem);
+  color: #ffbe42;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.desc {
+  font-size: clamp(1rem, 1.8vw, 1.15rem);
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.8;
+  max-width: 720px;
+  margin-bottom: 2.5rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 1rem 2.2rem;
+  background: #f5a623;
+  color: #081226;
+  font-family: var(--font-display, "Poppins", sans-serif);
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 999px;
+  box-shadow: 0 6px 24px rgba(245, 166, 35, 0.40);
+  transition: all 220ms ease;
+}
+
+.btnPrimary:hover {
+  background: #ffbe42;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px rgba(245, 166, 35, 0.55);
+}
+
+.btnSecondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 1rem 2.2rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-family: var(--font-display, "Poppins", sans-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 999px;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  transition: all 220ms ease;
+}
+
+.btnSecondary:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: #f5a623;
+  color: #ffbe42;
+  transform: translateY(-2px);
+}
+
+.trustRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  width: 100%;
+}
+
+.trustItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 500;
+}
+
+.trustIcon {
+  color: #f5a623;
+  font-weight: bold;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 0;
+  z-index: 1;
+}
+
+.wave svg {
+  width: 100%;
+  height: 70px;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btnPrimary, .btnSecondary {
+    width: 100%;
+    justify-content: center;
+  }
+  .trustRow {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+}

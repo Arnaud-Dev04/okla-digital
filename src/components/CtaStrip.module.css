@@ -1,0 +1,61 @@
+.strip {
+  background: linear-gradient(135deg, #081226 0%, #0e2340 60%, #183863 100%);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+.strip::before {
+  content: "";
+  position: absolute; inset: 0;
+  background-image:
+    radial-gradient(circle at 15% 50%, rgba(245, 166, 35, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 85% 50%, rgba(245, 166, 35, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+}
+.strip::after {
+  content: "";
+  position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, transparent, #f5a623, transparent);
+}
+.inner {
+  max-width: 1160px;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 5vw, 3rem);
+  display: flex; align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem; position: relative;
+}
+.content { flex: 1; }
+.title {
+  font-family: var(--font-display, "Poppins", sans-serif);
+  font-size: clamp(1.5rem, 3.2vw, 2.2rem);
+  font-weight: 700; color: #ffffff;
+  line-height: 1.25; margin-bottom: 0.5rem;
+}
+.sub { font-size: 1.05rem; color: rgba(255, 255, 255, 0.75); font-weight: 500; }
+.actions { display: flex; flex-wrap: wrap; gap: 1rem; flex-shrink: 0; }
+.btnCall {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.95rem 2rem;
+  background: #f5a623; color: #081226;
+  font-family: var(--font-display, "Poppins", sans-serif); font-size: 0.95rem; font-weight: 700;
+  border-radius: 999px; white-space: nowrap;
+  box-shadow: 0 6px 20px rgba(245, 166, 35, 0.35);
+  transition: all 200ms ease;
+}
+.btnCall:hover { background: #ffbe42; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(245, 166, 35, 0.5); }
+.btnEmail {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.95rem 2rem;
+  background: rgba(255, 255, 255, 0.09); color: #ffffff;
+  font-family: var(--font-display, "Poppins", sans-serif); font-size: 0.95rem; font-weight: 600;
+  border-radius: 999px; border: 1.5px solid rgba(255, 255, 255, 0.25); white-space: nowrap;
+  transition: all 200ms ease;
+}
+.btnEmail:hover { background: rgba(255, 255, 255, 0.16); border-color: #f5a623; color: #ffbe42; transform: translateY(-2px); }
+@media (max-width: 760px) {
+  .inner { flex-direction: column; text-align: center; align-items: center; }
+  .actions { justify-content: center; }
+  .btnCall, .btnEmail { width: 100%; justify-content: center; }
+}

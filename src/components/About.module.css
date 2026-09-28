@@ -1,0 +1,73 @@
+.about { padding-block: var(--section-py); background: var(--color-bg-alt); }
+.inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+
+.accent { color: var(--color-accent); }
+
+.descMore {
+  margin-top: 1rem;
+  font-size: 1rem; color: var(--color-text-sec); line-height: 1.8; max-width: 520px;
+}
+
+.valueList {
+  list-style: none;
+  margin-top: 1.5rem;
+  display: flex; flex-direction: column; gap: 0.55rem;
+}
+.valueList li {
+  font-size: 0.93rem; font-weight: 500;
+  color: var(--color-navy);
+  padding-left: 0.25rem;
+}
+
+.statsCol { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+
+.statCard {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 1.75rem 2rem;
+  position: relative; overflow: hidden;
+  transition: background var(--transition-base), border-color var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base);
+}
+.statCard::before {
+  content: "";
+  position: absolute; top: 0; left: 0;
+  width: 4px; height: 100%;
+  background: linear-gradient(180deg, var(--color-accent), var(--color-accent-light));
+  border-radius: 4px 0 0 4px;
+}
+.statCard:hover {
+  background: #fff;
+  border-color: var(--color-border-gold);
+  transform: translateX(5px);
+  box-shadow: var(--shadow-card);
+}
+.statValue {
+  font-family: var(--font-display);
+  font-size: 2.5rem; font-weight: 800;
+  color: var(--color-navy); line-height: 1; margin-bottom: 0.4rem;
+}
+.statLabel { font-size: 0.95rem; color: var(--color-text-sec); font-weight: 500; }
+
+.trustBadge {
+  display: flex; align-items: center; gap: 1rem;
+  background: linear-gradient(135deg, var(--color-navy), var(--color-navy-mid));
+  border-radius: var(--radius-card);
+  padding: 1.25rem 1.5rem;
+  margin-top: 0.25rem;
+}
+.trustIcon { font-size: 1.8rem; flex-shrink: 0; }
+.trustTitle {
+  font-family: var(--font-display); font-size: 1rem; font-weight: 700;
+  color: var(--color-accent-light);
+}
+.trustSub { font-size: 0.82rem; color: rgba(255,255,255,0.6); margin-top: 0.15rem; }
+
+@media (max-width: 900px) {
+  .inner { grid-template-columns: 1fr; gap: 3rem; }
+  .statsCol { grid-template-columns: repeat(2, 1fr); }
+  .statCard::before { top:0;left:0;width:100%;height:4px;border-radius:4px 4px 0 0; }
+  .statCard:hover { transform: translateY(-4px); }
+  .trustBadge { grid-column: 1 / -1; }
+}
+@media (max-width: 600px) { .statsCol { grid-template-columns: 1fr; } }
