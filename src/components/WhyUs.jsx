@@ -14,8 +14,15 @@ const ChartIcon = () => (
 );
 const CoinIcon = () => (
   <svg viewBox="0 0 48 48" fill="none" aria-hidden="true" width="36" height="36">
-    <circle cx="24" cy="24" r="16" stroke="#f5a623" strokeWidth="2"/>
-    <path d="M24 14 L24 34 M18 20 C18 20 20 17 24 17 C28 17 30 19.5 30 22 C30 27 18 25 18 30 C18 32.5 20 34 24 34 C28 34 30 32 30 30" stroke="#f5a623" strokeWidth="1.8" strokeLinecap="round"/>
+    <circle cx="24" cy="24" r="18" stroke="#f5a623" strokeWidth="2.2" />
+    <path d="M24 11v26" stroke="#f5a623" strokeWidth="2.4" strokeLinecap="round" />
+    <path
+      d="M29 18.5h-5.5a3.5 3.5 0 0 0 0 7h2a3.5 3.5 0 0 1 0 7H19"
+      stroke="#f5a623"
+      strokeWidth="2.4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
   </svg>
 );
 

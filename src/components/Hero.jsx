@@ -38,7 +38,7 @@ export default function Hero() {
             aria-label="Appeler OKLA Digital au +257 62 003 137"
           >
             <PhoneIcon size={18} />
-            <span>Appelez-nous gratuitement</span>
+            <span>Contactez-nous</span>
           </a>
           <a href="#services" className={styles.btnSecondary}>
             <span>D&eacute;couvrir nos services</span>
