@@ -13,7 +13,7 @@ const CONTACT_INFO = [
     value: "ntwariandymeril@gmail.com",
     href: "mailto:ntwariandymeril@gmail.com",
     Icon: EmailIcon,
-    note: "Email professionnel en cours de configuration",
+    
   },
   {
     label: "Adresse",

@@ -17,7 +17,7 @@ export default function Hero() {
         {/* Titre percutant */}
         <h1 id="hero-heading" className={styles.heading}>
           Donnez &agrave; votre marque<br />
-          <span className={styles.headingAccent}>la visibilit&eacute; qu&apos;elle m&eacute;rite</span>
+          <span className={styles.headingAccent}>la visibilit&eacute; qu&apos;elle m&eacute;rite ! ! !</span>
         </h1>
 
         {/* Slogan officiel OKLA Digital */}

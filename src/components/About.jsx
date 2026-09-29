@@ -1,9 +1,9 @@
 import styles from "./About.module.css";
 
 const STATS = [
-  { value: "2 ans",  label: "D\u2019experience digitale" },
-  { value: "50+",    label: "Projets livres avec succes" },
-  { value: "24h",    label: "Delai de reponse garanti" },
+  { value: "2 ans",  label: "D'expérience digitale" },
+  { value: "50+",    label: "Projets livrés avec succès" },
+  { value: "24h",    label: "Délai de réponse garanti" },
 ];
 
 export default function About() {
