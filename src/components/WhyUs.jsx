@@ -22,7 +22,7 @@ const CoinIcon = () => (
 const REASONS = [
   {
     title: "Interlocuteur unique",
-    desc: "Un seul contact d\u00e9di\u00e9 suit votre projet de A \u00e0 Z. Fini les interm\u00e9diaires\u00a0\u2014 vous avez toujours la bonne personne disponible, directement joignable.",
+    desc: "Un seul contact d\u00e9di\u00e9 suit votre projet de A \u00e0 Z. Fini les interm\u00e9diaires, vous avez toujours la bonne personne disponible, directement joignable.",
     Icon: PersonIcon,
   },
   {
@@ -32,7 +32,7 @@ const REASONS = [
   },
   {
     title: "Adapt\u00e9 \u00e0 votre budget",
-    desc: "Pas de formule impos\u00e9e. Nous construisons une strat\u00e9gie efficace selon vos moyens\u00a0\u2014 petite entreprise ou PME\u00a0\u2014 avec un maximum de retour sur investissement.",
+    desc: "Pas de formule impos\u00e9e. Nous construisons une strat\u00e9gie efficace selon vos moyens, petite entreprise ou PME avec un maximum de retour sur investissement.",
     Icon: CoinIcon,
   },
 ];

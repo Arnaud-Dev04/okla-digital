@@ -1,7 +1,7 @@
 import styles from "./About.module.css";
 
 const STATS = [
-  { value: "3 ans",  label: "D\u2019experience digitale" },
+  { value: "2 ans",  label: "D\u2019experience digitale" },
   { value: "50+",    label: "Projets livres avec succes" },
   { value: "24h",    label: "Delai de reponse garanti" },
 ];
@@ -19,13 +19,13 @@ export default function About() {
           </h2>
           <p className="section-desc">
             OKLA Digital est une agence de marketing digital bas&eacute;e &agrave; Bujumbura.
-            Nous aidons les entreprises locales &mdash; commerces, PME, startups et ONG &mdash;
+            Nous aidons les entreprises locales, commerces, PME, startups et ONG 
             &agrave; construire une pr&eacute;sence en ligne forte, coh&eacute;rente et rentable.
           </p>
           <p className={styles.descMore}>
             Nous ne vendons pas des services g&eacute;n&eacute;riques. Chaque strat&eacute;gie
             est con&ccedil;ue sp&eacute;cifiquement pour votre secteur, votre cible et votre budget.
-            Notre engagement&nbsp;: vous apporter des r&eacute;sultats mesurables, pas des promesses vides.
+            Notre engagement&nbsp;: vous apportez des r&eacute;sultats mesurables, pas des promesses vides.
           </p>
           <ul className={styles.valueList}>
             <li>&#10022; Strat&eacute;gie sur-mesure adapt&eacute;e au march&eacute; burundais</li>

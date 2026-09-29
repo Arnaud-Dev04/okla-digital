@@ -56,7 +56,7 @@ const SERVICES = [
     num: "04",
     img: imgWeb,
     imgAlt: "Création de site web responsive et professionnel",
-    badge: "Vitrine · E-commerce · Landing",
+    badge: "Vitrine · Sites Web · Landing",
     title: "Création de sites web",
     desc: "Sites web modernes, rapides et adaptés à tous les écrans (mobiles, tablettes, ordinateurs) avec un design soigné centré sur la conversion.",
     icon: (

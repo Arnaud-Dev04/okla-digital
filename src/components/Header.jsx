@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Logo from "./Logo";
 import styles from "./Header.module.css";
+import { PhoneIcon } from "./Icons";
 
 const NAV_LINKS = [
   { href: "#accueil",  label: "Accueil" },
@@ -9,18 +10,6 @@ const NAV_LINKS = [
   { href: "#pourquoi", label: "Pourquoi nous" },
   { href: "#contact",  label: "Contact" },
 ];
-
-const PhoneIcon = () => (
-  <svg width="17" height="17" viewBox="0 0 24 24" fill="none"
-    stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"
-    strokeLinejoin="round" aria-hidden="true">
-    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07
-      A19.5 19.5 0 0 1 4.13 13a19.79 19.79 0 0 1-3.07-8.67
-      A2 2 0 0 1 3.04 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81
-      a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.08 6.08l1.27-1.27
-      a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-  </svg>
-);
 
 export default function Header() {
   const [isOpen, setIsOpen]     = useState(false);
@@ -61,8 +50,12 @@ export default function Header() {
         <div className={`container ${styles.inner}`}>
 
           {/* Logo agrandi x3 */}
-          <a href="#accueil" aria-label="OKLA Digital - Accueil"
-            className={styles.logoLink} onClick={closeMenu}>
+          <a
+            href="#accueil"
+            aria-label="OKLA Digital - Accueil"
+            className={styles.logoLink}
+            onClick={closeMenu}
+          >
             <Logo height="72px" />
           </a>
 
@@ -78,9 +71,12 @@ export default function Header() {
           </nav>
 
           {/* Bouton CTA */}
-          <a href="tel:+25762003137" className={styles.ctaBtn}
-            aria-label="Appeler OKLA Digital">
-            <PhoneIcon />
+          <a
+            href="tel:+25762003137"
+            className={styles.ctaBtn}
+            aria-label="Appeler OKLA Digital"
+          >
+            <PhoneIcon size={17} />
             <span>Appelez-nous</span>
           </a>
 
@@ -146,7 +142,7 @@ export default function Header() {
             className={styles.mobileCtaBtn}
             onClick={closeMenu}
           >
-            <PhoneIcon />
+            <PhoneIcon size={18} />
             <span>+257 62 003 137</span>
           </a>
         </div>
