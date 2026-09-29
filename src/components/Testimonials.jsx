@@ -8,25 +8,25 @@ const StarIcon = () => (
 
 const TESTIMONIALS = [
   {
-    name: "Jean-Pierre M.",
-    role: "Gérant, Commerce Bujumbura",
+    name: "Gerant, Luxe Looks",
+    role: "NDIKUMANA Pierre",
     text: "OKLA Digital a transformé notre présence sur Facebook. En 2 mois, notre page est passée de 200 à plus de 1 500 abonnés et nos ventes en ligne ont doublé. Équipe sérieuse, professionnelle et très réactive.",
     stars: 5,
-    initial: "J",
+    initial: "N",
   },
   {
-    name: "Amina K.",
-    role: "Directrice, ONG Burundi Impact",
+    name: "Coordinatrice ADV-PV",
+    role: "AMINA KASANGA",
     text: "Nous avions besoin d’un site web moderne pour nos partenaires internationaux. OKLA Digital a livré en 3 semaines un site élégant, rapide et parfaitement bilingue. Très satisfaite du résultat.",
     stars: 5,
     initial: "A",
   },
   {
-    name: "Patrick N.",
-    role: "Entrepreneur, Import-Export",
+    name: "Directeur, NZIMA Trading",
+    role: "NZIMA Jean-Paul",
     text: "Leur gestion des campagnes publicitaires est remarquable. J’ai commencé à recevoir des demandes de nouveaux clients dès la première semaine. Les rapports mensuels sont clairs et honnêtes.",
     stars: 5,
-    initial: "P",
+    initial: "N",
   },
 ];
 
