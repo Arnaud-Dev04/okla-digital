@@ -10,7 +10,7 @@ export default function Hero() {
         <div className={styles.badgeWrap}>
           <span className={styles.badge}>
             <span className={styles.badgeDot} aria-hidden="true" />
-            Agence de marketing digital &mdash; Bujumbura
+            Agence de Marketing Digital 
           </span>
         </div>
 

@@ -17,7 +17,7 @@ const CONTACT_INFO = [
   },
   {
     label: "Adresse",
-    value: "Q. Industriel, Chaussée d’Uvira N°72 — Bujumbura, Burundi",
+    value: "Q.Industriel, Chaussée d’Uvira N°72 Bujumbura,Burundi",
     href: "https://maps.google.com/?q=Q.+Industriel+Chaussee+Uvira+Bujumbura+Burundi",
     external: true,
     Icon: MapPinIcon,
@@ -35,7 +35,7 @@ export default function Contact() {
           </h2>
           <p className="section-desc">
             Vous avez un projet en tête ? Nous sommes disponibles pour un premier
-            échange sans engagement. Appelez-nous ou écrivez-nous directement &mdash;
+            échange sans engagement. Appelez-nous ou écrivez-nous directement,
             réponse garantie sous 24h.
           </p>
         </div>
